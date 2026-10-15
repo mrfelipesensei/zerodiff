@@ -18,4 +18,7 @@ public class Transacao {
         return data + " | " + valor + " | " + nome;
     }
 
+    public String chave() {
+        return data + "|" + nome;
+    }
 }
