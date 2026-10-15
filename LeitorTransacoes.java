@@ -15,8 +15,9 @@ public class LeitorTransacoes {
             while ((linha = leitor.readLine()) != null) {
                 String[] campos = linha.split(";");
                 String data = campos[0];
-                double Valor = Double.parseDouble(campos[1]);                    String nome = campos[2];
-                transacoes.add(new Transacao(data, Valor, nome));
+                double valor = Double.parseDouble(campos[1]);                    
+                String nome = campos[2];
+                transacoes.add(new Transacao(data, valor, nome));
             }
         } catch (Exception e) {
             System.out.println("Erro: " + e.getMessage());
