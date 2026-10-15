@@ -1,14 +1,12 @@
 public class Programa {
     public static void main(String[] args) {
-        Conta c1 = new Conta();
-        c1.titular = "Maria";
+        Conta c1 = new Conta("Maria");
         c1.depositar(100.0);
 
-        Conta c2 = new Conta();
-        c2.titular = "Felipe";
+        Conta c2 = new Conta("Felipe");
         c2.depositar(50.0);
         
-        c1.mostrarSaldo();
-        c2.mostrarSaldo();
+        System.out.println(c1.getTitular() + " tem R$ " + c1.getSaldo());
+        System.out.println(c2.getTitular() + " tem R$ " + c2.getSaldo());
     }
 }
